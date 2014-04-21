@@ -1,0 +1,352 @@
+@font-face {
+    font-family: 'eras_light_itcregular';
+    src: url('../fonts/custom-webfont.eot');
+    src: url('../fonts/custom-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/custom-webfont.woff') format('woff'),
+         url('../fonts/custom-webfont.ttf') format('truetype'),
+         url('../fonts/custom-webfont.svg#eras_light_itcregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Reseting CSS */
+* {
+	margin:0;
+	padding:0;
+	list-style:none;
+	vertical-align:baseline;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: gray;
+}
+
+
+/* Footer */
+footer {
+	position: fixed;
+	width: 100%;
+	z-index: 2000;
+	bottom: 0;
+	padding-bottom: 10px;
+	
+}
+footer p {
+	text-align: center;
+}
+
+footer a {
+	color: silver;
+}
+
+/* */
+
+i.icon {
+	font-size: 27px;
+ 	color: grey;
+  text-shadow: 1px 1px 0px rgba(255,255,255,0.5);
+  -webkit-background-clip: text;
+     -moz-background-clip: text;
+          background-clip: text;
+}
+
+i.icon:hover, .bigIcon i:hover, .skillDiv p:hover {
+	color: rgb(70, 70, 70);;
+}
+
+.tooltip:hover:after{
+	background: #333;
+	background: rgba(0,0,0,.7);
+	border-radius: 4px;
+	bottom: -25px;
+	color: #fff;
+	content: attr(title);
+	/* left: 20%; */
+	padding: 5px 15px;
+	position: absolute;
+	z-index: 98;
+	width: auto;
+	font-size: 16px
+}
+
+
+strong {
+	font-size: 24px;
+}
+
+h2 {
+	font-size: 60px;
+	font-weight: normal;
+	margin: 30px 0px;
+	text-shadow: 2px 2px  gray;
+	color: black;
+
+}
+
+h1 {
+	font-size: 30px;
+	font-weight: 100;
+	margin: 30px 0px;
+
+}
+
+body {
+	font-family: "eras_light_itcregular", sans-serif;
+	font-size: 20px;
+	text-align: justify;
+	color: black;
+	outline-color: black;
+	overflow: hidden;
+}
+
+#bodyBackground { 
+	position: absolute;
+	z-index: -1;
+	width:100%;
+	height:100%;
+
+	background: rgb(239,239,239); /* Old browsers */
+	background: -moz-linear-gradient(45deg,  rgba(239,239,239,1) 0%, rgba(226,226,226,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,rgba(239,239,239,1)), color-stop(100%,rgba(226,226,226,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(45deg,  rgba(239,239,239,1) 0%,rgba(226,226,226,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(45deg,  rgba(239,239,239,1) 0%,rgba(226,226,226,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(45deg,  rgba(239,239,239,1) 0%,rgba(226,226,226,1) 100%); /* IE10+ */
+	background: linear-gradient(45deg,  rgba(239,239,239,1) 0%,rgba(226,226,226,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#e2e2e2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+header {
+	padding-top: 10px;
+	position: fixed;
+	right: 0;
+	z-index: 100;
+	width: 100%;
+	height: 35px;
+
+	/* Header Shadow */
+	-moz-box-shadow: 0px 2px 10px #888;
+	-webkit-box-shadow: 0px 2px 10px #888;
+	box-shadow: 0px 2px 10px #888;
+
+	/* Header background gradient */
+	background: #f2f2f2; /* Old browsers */
+	background: -moz-linear-gradient(left,  #f2f2f2 0%, #e5e5e5 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#f2f2f2), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #f2f2f2 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #d8d8d8 0%,#e5e5e5 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #f2f2f2 0%,#e5e5e5 100%); /* IE10+ */
+	background: linear-gradient(to right,  #d8d8d8 0%,#e5e5e5 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#e5e5e5',GradientType=1 ); /* IE6-9 */
+
+}
+
+header nav:first-child {
+	float: left;
+}
+
+header #sections ul {
+	text-align: right;
+}
+
+header li {
+	display: inline;
+	margin: 0px 10px;
+	cursor: pointer;
+}
+
+
+
+
+
+#left, #right {
+	position: fixed;
+	top: 35%;	
+	font-size: 150px;
+	text-align: center;
+	margin: 40px;
+	font-family: serif;
+	z-index: 99;
+	cursor: pointer;
+}
+
+#left {
+	left: 0px;
+
+	width: 0; 
+	height: 0; 
+	border-top: 40px solid transparent;
+	border-bottom: 40px solid transparent;
+	
+	border-right: 40px solid rgb(200,200,200);
+}
+
+#right {
+	right: 0px;
+
+	width: 0; 
+	height: 0; 
+	border-top: 40px solid transparent;
+	border-bottom: 40px solid transparent;
+	
+	border-left: 40px solid rgb(200,200,200);
+
+}
+
+.delay {
+	-webkit-animation-duration: 3s;
+	-webkit-animation-delay: 0.25s;
+}
+
+.delay10 {
+	-webkit-animation-duration: 3s;
+	-webkit-animation-delay: 0.10s;
+}
+
+.delay20 {
+	-webkit-animation-duration: 3s;
+	-webkit-animation-delay: 0.20s;
+}
+
+.delay30 {
+	-webkit-animation-duration: 3s;
+	-webkit-animation-delay: 0.30s;
+}
+
+.delay40 {
+	-webkit-animation-duration: 3s;
+	-webkit-animation-delay: 0.40s;
+}
+
+
+.box {
+	width: 800px;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Sections IDs */
+
+section {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+#whoIAm {
+}
+
+#experience {
+	left: 100%;
+}
+
+#skills {
+	left: 200%;
+}
+
+#funApps {
+	left: 300%;
+}
+
+#contact {
+	left: 300%;
+}
+
+
+#skills .skillDiv {
+	float: left;
+	width: 33%;
+}
+
+.skillDiv i{
+	font-size: 50px;
+}
+
+.skillDiv span {
+	font-family: Arial;
+	font-size: 40px;
+}
+
+.skillDiv p{
+	text-align: center;
+}
+
+.skillDiv li {
+	font-size: 18px;
+	text-align: center;
+}
+
+/* SkillTree IDs */
+
+/* Contact IDs */
+
+.center {
+	text-align: center;
+}
+
+#links {
+	width: 100%;
+	height: 200px;
+}
+
+#links p { /* div of each link */ 
+	width: 25%;
+	height: 100px;
+	float: left;
+	text-align: center;
+}
+
+#links span:hover {
+	color: rgb(70, 70, 70);;
+}
+
+#links i {
+	padding: 20px;
+}
+
+
+#thumbBackground {
+	position: absolute;
+	font-size: 400px;
+	color: rgb(225, 225, 225);
+	left: 65%;
+	top: 300px;
+}
+
+.language {
+	display: none;
+}
+
+.visible {
+	display: block;
+}
+
+.invisible {
+	display: none;
+}
+
+#pdfLinks {
+
+}
+
+/* Flags div */
+
+#flags {
+	position: fixed;
+	margin-left: 45%
+}
+
+#flags ul {
+}
+
+#flags img {
+	background-repeat: no-repeat;
+	width: 45px;
+}

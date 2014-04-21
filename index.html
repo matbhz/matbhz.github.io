@@ -1,1 +1,290 @@
-Hello World
+    <!DOCTYPE HTML>
+    <html>
+    <head>
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/animate.css">
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+
+      <script type="text/javascript" src="javascript/jquery-1.11.0.min.js"></script>
+      <script type="text/javascript" src="javascript/main.js"></script>
+
+      <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-48822432-1', 'matbhz.com');
+      ga('send', 'pageview');
+
+      </script>
+
+      <meta charset="UTF-8">
+      <title>Matheus Felipe</title>
+      <body>
+
+        <header>
+         <nav id="networksLinks">
+          <UL>
+            <li><a href="http://www.linkedin.com/in/matbhz/en" target="_blank" data-index="0" class="delay10 animated fadeIn"><i title="LinkedIn" id="linkedin" class="tooltip icon fa fa-linkedin-square"></i></a></li>
+            <li><a href="mailto:matbhz@gmail.com" data-index="1" class="delay20 animated fadeIn"><i title="matbhz@gmail.com" id="email" class="tooltip icon fa fa-envelope-o"></i></a></li>
+            <li><a href="http://github.com/matbhz" target="_blank" data-index="2" class="delay30 animated fadeIn"><i title="GitHub" id="github" class="tooltip icon fa fa-github-square"></i></a></li>
+            <li><a href="http://flickr.com/matbhz" target="_blank" data-index="3" class="delay40 animated fadeIn"><i title="Flickr" id="flickr" class="tooltip icon fa fa-flickr"></i></a></li>
+          </UL>
+        </nav>
+
+        <nav id="flags">
+          <ul>
+            <li><img class="flag selectedFlag" id="usaFlag" data-target="en-us" data-language-index="0" src="images/usa-flag.png" alt="English"/></li>
+            <li><img class="flag" id="brazilFlag" data-target="pt-br" data-language-index="1" src="images/brazil-flag.png" alt="Portuguese"/></li>
+          </ul>
+        </nav>
+        <!-- HEADER LANGUAGES -->
+        <!-- English header -->
+        <nav id="sections" data-language="en-us" class="language visible">
+          <UL>
+            <li><a data-index="0" class="delay10 animated fadeIn">Who I am</a></li>
+            <li><a data-index="1" class="delay20 animated fadeIn">Experience</a></li>
+            <li><a data-index="2" class="delay30 animated fadeIn">Skill set</a></li>
+            <li><a data-index="3" class="delay40 animated fadeIn">Contact</a></li>
+          </UL>
+        </nav>
+        <!-- Portuguese header -->
+        <nav id="sections" data-language="pt-br" class="language">
+          <UL>
+            <li><a data-index="0" class="delay10 animated fadeIn">Quem sou eu</a></li>
+            <li><a data-index="1" class="delay20 animated fadeIn">Experiência</a></li>
+            <li><a data-index="2" class="delay30 animated fadeIn">Habilidades</a></li>
+            <li><a data-index="3" class="delay40 animated fadeIn">Contato</a></li>
+          </UL>
+        </nav>
+      </header>
+
+      <div id="bodyBackground"></div>
+      <div id="right"></div>
+      <div id="left"></div>
+      <!-- CONTENT LANGUAGES -->
+      <!-- English content -->
+      <div id="englishContent" data-language="en-us" class="language visible">
+        <div>
+          <section id="whoIAm" >
+            <div class="box">
+              <h2 class="animated fadeInDown">Who I am</h2>
+              <P class="delay animated fadeInDown">
+                I am <strong style="cursor:help">Matheus Felipe</strong> and I am Software Engineer from Brazil living in Canada. <br><br>
+                I am a result-oriented, challenge-driven, autodidact nerd and geek (and a photographer in the spare time) IT
+                guy who likes to know a little bit of everything, roaming around in the American continent assisting great
+                companies in Brazil and the United States for 4 years.<br> <br>
+                I have mainly worked as a Java developer in my career but my skillset is not by far this narrow! I also have
+                expertise in Ruby, Systems Automation as a QA, Databases, getting stronger in the Front-End part (do you
+                like this website? :P ) and currently I am addicted on learning iPhone development and creating my Rails apps.
+                <br><br>
+                I like to self teach me, I like new stuff, I like to work with smart, fun people. <br><br>
+                If you are curious about my work, please click right and continue browsing!<br>
+              </P>
+            </div>
+          </section>
+
+          <section id="experience">
+            <div class="box">
+
+              <h2 class="animated fadeInDown">Experience</h2>
+
+              <P class="delay animated fadeInDown">After I obtained my bachelor degree in Computer Science I entered a trainee program at <a href="http://www.sydle.com" target="_blank">SYDLE</a>, a specialized I.T. company in Belo Horizonte / Brazil. In this program, I passed through the main areas of the software development process: UI/UX development, Database Administration and Software Development. At the end of the program I became a full time Software Developer. <br> <br> Some years later I went to <a href="http://www.avenuecode.com" target="_blank">Avenue Code</a>, a cool startup from San Francisco / CA. There I worked for clients like GAP Inc. developing complex Java systems and also assisting in Automation. I also participated on a Ruby on Rails project for hours management, ACDC.
+              </P>
+            </div>
+          </section>
+
+          <section id="skills">
+            <div class="box">
+
+              <h2 class="animated fadeInDown">Skillset</h2>
+              <p class="delay animated fadeInDown">Versatility is my strong point. I learn fast and adapt quickly. <br>
+                I have worked with a multitude of different technologies, libraries and frameworks, among them:</p> <br>
+
+                <div id="programmingLanguages" class="delay10 animated fadeIn skillDiv">
+                  <div class="bigIcon"><p><span>{ }</span></p></div>
+                  <p><strong>Languages</strong></p><br>
+                  <ul>
+                    <li>Java</li>
+                    <li>Ruby</li>
+                    <li>Javascript</li>
+                    <li>Objective-C</li>
+                    <li>PHP</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                  </ul>
+                </div>
+                <div id="databases" class="delay10 animated fadeIn skillDiv">
+                  <div class="bigIcon"><p><i class="fa fa-hdd-o"></i></p></div>
+                  <p><strong>Databases</strong></p><br>
+                  <ul>
+                    <li>Oracle</li>
+                    <li>SQL Server</li>
+                    <li>MySQL</li>
+                    <li>PostgreSQL</li>
+                    <li>MongoDB</li>
+                  </ul>
+                </div>
+                <div id="frameworks" class="delay10 animated fadeIn skillDiv">
+                 <div class="bigIcon"><p><i class="fa fa-wrench"></i></p></div>
+                 <p><strong>Frameworks</strong></p><br>
+                  <ul>
+                    <li>Spring</li>
+                    <li>Rails</li>
+                    <li>jUnit</li>
+                    <li>Capybara</li>
+                    <li>Selenium</li>
+                    <li>Rails (on learning!)</li>
+                    <li>Hibernate</li>
+                  </ul>
+               </div>
+
+             </div>
+           </section>
+
+           <section id="contact">
+            <div class="box">
+              <h2 class="animated fadeInDown">Contact</h2>
+              <div id="thumbBackground"> <i class="fa fa-thumbs-up"></i> </div>
+              <p class="delay10 animated fadeInDown" style="text-align: center">Wanna chat? Right here you can find my e-mail, resumé in PDF and social networks addresses!</p>
+              <br>
+              <div id="links">
+                <p>
+                  <a href="mailto:matbhz@gmail.com" data-index="0" class="delay10 animated fadeIn"><i title="matbhz@gmail.com" id="email" class="tooltip icon fa fa-envelope-o"></i><br>
+                   <span>matbhz@gmail.com</span>
+                 </a>
+               </p>
+               <p>
+                 <span data-index="0" class="delay20 animated fadeIn"><i title="PDF" id="pdf" class="tooltip icon fa fa-file-text-o"></i><br>
+                   <span>Resumé - PDF</span><br><br>
+                   <a href="pdf/Matheus_Felipe_CV_-_VANCOUVER_-_English.pdf" target="_blank">English</a><br>
+                   <a href="pdf/Matheus_Felipe_CV_-_VANCOUVER_-_French.pdf" target="_blank">French</a><br>
+                   <a href="pdf/Matheus_Felipe_CV_-_VANCOUVER_-_Portuguese.pdf" target="_blank">Portuguese</a>
+                  </span> 
+               </p>
+               <p>
+                <a href="http://www.linkedin.com/in/matbhz/en" target="_blank" data-index="0" class="delay30 animated fadeIn"><i title="LinkedIn" id="linkedin" class="tooltip icon fa fa-linkedin-square"></i><br>
+                  <span>LinkedIn</span>
+                </a>
+
+                <p>
+                 <a href="http://github.com/matbhz" target="_blank" data-index="0" class="delay40 animated fadeIn"><i title="GitHub" id="github" class="tooltip icon fa fa-github-square"></i><br>
+                   <span>GitHub</span>
+                 </a>
+               </p>
+
+             </div>
+           </div>
+         </section>
+       </div>
+     </div>
+
+     <!-- PORTUGUESE -->
+      <div id="portugueseContent" data-language="pt-br" class="language">
+        <div>
+          <section id="whoIAm">
+            <div class="box">
+              <h2 class="animated fadeInDown">Quem sou eu</h2>
+              <P class="delay animated fadeInDown">
+                Eu me chamo <strong style="cursor:help">Matheus Felipe</strong> e eu sou um Engenheiro de Software brasileiro morando no Canadá. <br><br>
+                Eu sou orientado a resultados, adoro desafios, sou aquele cara de T.I. autodidata nerd e geek (e fotógrafo no tempo livre) que gosta de saber um pouco de tudo, vagando pelo continente Americano colaborando com grandes empresas no Brasil e nos Estados Unidos por 4 anos.<br> <br>
+                Trabalhei principalmente como desenvolvedor Java em minha carreira, mas minhas habilidades nem de longes são tão limitadas assim! Tenho proficiência em Ruby, Automação de Sitemas como um Analista de Qualidade (QA), banco de dados, me aperfeiçoando em Front-End (você curtiu meu site? :P) e atualmente estou viciado aprendendo desenvolvimento para iPhone e criando uns apps em Rails.<br><br>
+                Eu gosto de aprender sozinho, gosto de coisa nova e gosto de trabalhar com gente inteligente e divertida.<br><br>
+                Se você está curioso sobre meu trabalho, por favor clique nas setinhas e navegue pelo site!<br>
+              </P>
+            </div>
+          </section>
+
+          <section id="experience">
+            <div class="box">
+              <h2 class="animated fadeInDown">Experiência</h2>
+              <P class="delay animated fadeInDown">Após obter meu grau de bacharel em Ciência da Computação pela PUC Minas, entrei em um processo de trainee na <a href="http://www.sydle.com" target="_blank">SYDLE</a>, uma empresa especializada em T.I. em Belo Horizonte / MG. No programa eu passei pelas principais areas do desenvolvimento de software: Desenvolvimento UI/UX, Administração de Banco de Dados (DBA) e, finalmente, Desenvolvimento de Software. Ao final do programa, me tornei um Desenvolvedor de Software em tempo integral, trabalhando para grandes clientes do mercado brasileiro de internet, mineiração e cartões de crédito. <br> <br> Alguns anos depois fui para a <a href="http://www.avenuecode.com" target="_blank">Avenue Code</a>, uma startup bacana de San Francisco, Califórnia. Lá eu trabalhei para a gigante GAP Inc., desenvolvendo complexos sistemas em Java e colaborando na automação. Também me dispus a iniciativa de participar de um projeto interno para gerenciamento de horas, feito em Ruby on Rails, chamado ACDC.
+              </P>
+            </div>
+          </section>
+
+          <section id="skills">
+            <div class="box">
+              <h2 class="animated fadeInDown">Habilidades</h2>
+              <p class="delay animated fadeInDown">Versatilidade é meu ponto mais forte. Eu aprendo rápido e me adapto rápido<br>
+                Já trabalhei com uma infinidade de tecnologias, bibliotecas e frameworks differentes, entre eles:</p> <br>
+                <div id="programmingLanguages" class="delay10 animated fadeIn skillDiv">
+                  <div class="bigIcon"><p><span>{ }</span></p></div>
+                  <p><strong>Linguagens</strong></p><br>
+                  <ul>
+                    <li>Java</li>
+                    <li>Ruby</li>
+                    <li>Javascript</li>
+                    <li>Objective-C</li>
+                    <li>PHP</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                  </ul>
+                </div>
+                <div id="databases" class="delay10 animated fadeIn skillDiv">
+                  <div class="bigIcon"><p><i class="fa fa-hdd-o"></i></p></div>
+                  <p><strong>Banco de Dados</strong></p><br>
+                  <ul>
+                    <li>Oracle</li>
+                    <li>SQL Server</li>
+                    <li>MySQL</li>
+                    <li>PostgreSQL</li>
+                    <li>MongoDB</li>
+                  </ul>
+                </div>
+                <div id="frameworks" class="delay10 animated fadeIn skillDiv">
+                 <div class="bigIcon"><p><i class="fa fa-wrench"></i></p></div>
+                 <p><strong>Frameworks</strong></p><br>
+                 <ul>
+                  <li>Spring</li>
+                  <li>Rails</li>
+                  <li>jUnit</li>
+                  <li>Capybara</li>
+                  <li>Selenium</li>
+                  <li>Rails (aprendendo!)</li>
+                  <li>Hibernate</li>
+                </ul>
+               </div>
+             </div>
+           </section>
+
+           <section id="contact">
+            <div class="box">
+              <h2 class="animated fadeInDown">Contato</h2>
+              <div id="thumbBackground"> <i class="fa fa-thumbs-up"></i> </div>
+              <p class="delay10 animated fadeInDown"style="text-align: center">Quer conversar? Aqui está meu e-mail, currículo em PDF e os links para as redes profissionais!</p>
+              <br>
+              <div id="links">
+                <p>
+                   <a href="mailto:matbhz@gmail.com" data-index="0" class="delay10 animated fadeIn"><i title="matbhz@gmail.com" id="email" class="tooltip icon fa fa-envelope-o"></i><br>
+                   <span>matbhz@gmail.com</span>
+                 </a>
+               </p>
+               <p>
+                 <span data-index="0" class="delay20 animated fadeIn"><i title="PDF" id="pdf" class="tooltip icon fa fa-file-text-o"></i><br>
+                   <span>Currículo - PDF</span><br><br>
+                   <a href="pdf/Matheus_Felipe_CV_-_VANCOUVER_-_English.pdf" target="_blank">English</a><br>
+                   <a href="pdf/Matheus_Felipe_CV_-_VANCOUVER_-_French.pdf" target="_blank">French</a><br>
+                   <a href="pdf/Matheus_Felipe_CV_-_VANCOUVER_-_Portuguese.pdf" target="_blank">Portuguese</a>
+                  </span> 
+               </p>
+               <p>
+                <a href="http://www.linkedin.com/in/matbhz/en" target="_blank" data-index="0" class="delay30 animated fadeIn"><i title="LinkedIn" id="linkedin" class="tooltip icon fa fa-linkedin-square"></i><br>
+                  <span>LinkedIn</span>
+                </a>
+                <p>
+                 <a href="http://github.com/matbhz" target="_blank" data-index="0" class="delay40 animated fadeIn"><i title="GitHub" id="github" class="tooltip icon fa fa-github-square"></i><br>
+                   <span>GitHub</span>
+                 </a>
+               </p>
+
+             </div>
+           </div>
+         </section>
+       </div>
+     </div>
+ 
+<footer><p><a href="http://www.matbhz.com">matbhz.com</a></p></footer>
+</body>
+</html>
