@@ -20,6 +20,10 @@ $(document).ready(function () {
 
     var rightButtonSelector = $("#right");
     rightButtonSelector.click(function () {
+
+        // In Safari only it will only increment the animation if it is 'display: block;'
+        $("div.language").addClass("visible");
+
         if (currentIndex < sectionsQty) {
             currentIndex++;
             rightButtonSelector.removeClass();
@@ -37,6 +41,10 @@ $(document).ready(function () {
 
     var leftButtonSelector = $("left");
     $("#left").click(function () {
+
+        // In Safari only it will only increment the animation if it is 'display: block;'
+        $("div.language").addClass("visible");
+
         if (currentIndex > 0) {
             currentIndex--;
             leftButtonSelector.removeClass();
@@ -52,9 +60,8 @@ $(document).ready(function () {
         reanimateSection(currentIndex);
     });
 
-    var flagsButtons = $(".flag");
 
-    flagsButtons.click(function () {
+    $(".flag").click(function () {
 
         // Change content language
         $(".language").removeClass("visible");
