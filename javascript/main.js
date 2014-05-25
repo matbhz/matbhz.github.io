@@ -60,21 +60,6 @@ $(document).ready(function () {
         reanimateSection(currentIndex);
     });
 
-
-    $(".flag").click(function () {
-
-        // Change content language
-        $(".language").removeClass("visible");
-        var targetLanguage = $(this).attr("data-target");
-        $("[data-language='" + targetLanguage + "']").addClass("visible");
-
-        // Change current selected language
-        $(".flag").removeClass("selectedFlag");
-        $(this).addClass("selectedFlag");
-
-    });
-
-
     // Animation for skill set - TODO: Make the animation generic for each language Content
     $.each($("#englishContent").find("#skills li"), function (index, value) {
         $(value).css("animation-delay", (index / 10) + "s").addClass("animated fadeInUp");
@@ -91,11 +76,9 @@ $(document).ready(function () {
 
 function reanimateSection(currentIndex) {
 
-    var selectedLanguageIndex = $(".selectedFlag").attr("data-language-index");
-
     $("div.language").removeClass("visible");
     setTimeout(function () {
-        $("div.language").eq(+selectedLanguageIndex).addClass("visible");
+        $("div.language").addClass("visible");
     }, 1);
 
 }
