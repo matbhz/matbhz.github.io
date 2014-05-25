@@ -47,17 +47,20 @@ footer a {
 
 i.icon {
     font-size: 27px;
-    color: grey;
+    color: #DADADA;
     text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
 }
 
 i.icon:hover, .bigIcon i:hover, .skillDiv p:hover {
-    color: rgb(70, 70, 70);
+    color: #C2C2C2;
 }
 
-.tooltip:hover:after {
-    background: #333;
-    background: rgba(0, 0, 0, .7);
+#links i.icon {
+    color:rgb(140, 140, 140);
+}
+
+.tooltip:hover::after {
+    background: rgba(185, 185, 185, .7);
     border-radius: 4px;
     bottom: -25px;
     color: #fff;
@@ -78,8 +81,8 @@ h2 {
     font-size: 60px;
     font-weight: normal;
     margin: 30px 0px;
-    text-shadow: 2px 2px gray;
-    color: black;
+    text-shadow: 2px 2px rgb(216, 216, 216);
+    color: dimgray;
 
 }
 
@@ -149,6 +152,11 @@ header #sections ul {
     text-align: right;
 }
 
+header #sections a {
+    color: rgb(160, 160, 160);
+    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.5);
+}
+
 header li {
     display: inline;
     margin: 0px 10px;
@@ -164,28 +172,22 @@ header li {
     font-family: serif;
     z-index: 99;
     cursor: pointer;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent;
 }
 
 #left {
     left: 0px;
-
     width: 0;
     height: 0;
-    border-top: 40px solid transparent;
-    border-bottom: 40px solid transparent;
-
-    border-right: 40px solid rgb(200, 200, 200);
+    border-right: 40px solid rgb(235, 235, 235);
 }
 
 #right {
     right: 0px;
-
     width: 0;
     height: 0;
-    border-top: 40px solid transparent;
-    border-bottom: 40px solid transparent;
-
-    border-left: 40px solid rgb(200, 200, 200);
+    border-left: 40px solid rgb(235, 235, 235);
 
 }
 
@@ -303,7 +305,7 @@ section {
 #thumbBackground {
     position: absolute;
     font-size: 400px;
-    color: rgb(240, 240, 240);
+    color: rgb(245, 245, 245);
     left: 65%;
     top: 300px;
 }
